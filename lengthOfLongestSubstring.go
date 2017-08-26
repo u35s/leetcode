@@ -19,7 +19,7 @@ func lengthOfLongestSubstring(s string) int {
 			start = dict[s[i]]
 		}
 		dict[s[i]] = i
-		if i-start > maxLen {
+		if i-start >= maxLen {
 			maxLen = i - start
 		}
 	}
